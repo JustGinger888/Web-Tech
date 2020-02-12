@@ -4,6 +4,7 @@
 }
 
 body {
+    margin: 4% 6% 0% 6%;
     background-color: #f7f7f7;
 }
 
@@ -12,7 +13,8 @@ body {
     transition: 0.3s;
     width: 40%;
     border-radius: 5px;
-    margin: 4% 4% 4% 4%;
+    margin: 4% 4% 4% 0%;
+    padding-bottom: 2%;
 }
   
 .card:hover {
@@ -20,14 +22,72 @@ body {
 }
 
 .gradient {
-    background-image: linear-gradient( #ececec, white);
+    background-image: linear-gradient( #f0f0f0, white);
 }
 
-img {
+.featureTitle {
+    text-align: center;
+}
+
+.rectangle{
+    width:28px;
+    height:4px;
+    background:#f3546f;
+}
+
+.rectangleCenter {
+    display: block;
+    margin: 4% auto 4% auto;
+}
+
+.card img {
     display: block;
     margin: 4% auto 4% auto;
 }
 
 .container {
     padding: 8px 16px 8px 16px;
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #111111;
+  }
+
+  
+  li img {
+    height: 40px;
+  }
+
+  .rectangleNav {
+    display: block;
+    margin: 0px 16px;
+    width: 14px;
+    background: #111111;;
+}
+
+.navElement:hover a{ 
+    color: #f3546f;
+}
+
+.navElement:hover div{ 
+    background: #f3546f;
 }
