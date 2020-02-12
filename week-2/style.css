@@ -43,6 +43,7 @@ body {
 .card img {
     display: block;
     margin: 4% auto 4% auto;
+    padding: 30px 0px 30px 0px;
 }
 
 .container {
@@ -59,26 +60,27 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
+}
   
-  li {
+li {
     float: left;
-  }
+}
   
-  li a {
+li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     color: #111111;
-  }
+}
 
   
-  li img {
+li img {
     height: 40px;
-  }
+    padding-left: 28px;
+}
 
-  .rectangleNav {
+.rectangleNav {
     display: block;
     margin: 0px 16px;
     width: 14px;
@@ -118,6 +120,73 @@ ul {
     clear: both;
 }
 
+#intro {
+    padding-top: 4%;
+}
+
+.btnGreen {
+    background-color: #00d275;
+    border: none;
+    color: white;
+    padding: 10px 28px 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 0px 80px 2%;
+    border-radius: 42px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.btnGreen:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+}
+
+
 h1{
-    
+    color: #f3546f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: large;
+    margin-left: 2%;
+}
+
+h2{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 520;
+    font-size: 46px;
+    padding-right: 28%;
+    margin-left: 2%;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.redText{
+    color: #f3546f;
+}
+
+.description {
+    color: #f3546f;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    padding-top: 40px;
+    padding-bottom: 8px;
+}
+
+p {
+    color: #7b7b7e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    padding-bottom: 40px;
+}
+
+.centerText {
+    padding-top: 10px;
+    text-align: center;
+
 }
