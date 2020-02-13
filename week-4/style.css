@@ -1,0 +1,123 @@
+body {
+    background-image: url('https://s1.1zoom.me/big3/294/Houses_Skyscrapers_Synthwave_By_SynthEx_Moon_Night_562745_3840x2160.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formParent {
+    display: table;
+    width: 60%;
+    margin: auto;
+    opacity: 95%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+ 
+#studentSurvey {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
+
+h1 {
+    color: #45a049;
+    font-family: "Helvetica", Times, serif;
+    text-align: center;
+    font-size:40px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+    
+label {
+    padding: 4px 4px 4px 0;
+    display: inline-block;
+}
+    
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: 0.3s;
+}
+    
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+    
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+    
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+    
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+    
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+      
+fieldset {
+
+    border: 1px solid #45a049;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #formParent {
+        width: 80%;
+    }
+}

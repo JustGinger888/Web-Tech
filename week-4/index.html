@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Week 4</title>
+</head>
+<body>
+    <div>
+        <div id="formParent" class="container">
+            <form id="studentSurvey" action="http://www.google.com" method="post">
+                <h1>Student Survey</h1>
+            
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <div class="row">
+                        <div class="col-25">
+                            <label> Name* </label> 
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="fullName" placeholder="Enter Name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">    
+                            <label> Email* </label> 
+                        </div>
+                        <div class="col-75">
+                            <input type="email" name="email" placeholder="Enter E-mail" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">  
+                            <label> Number* </label> 
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" name="number" placeholder="Enter Number" required>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <br/>
+                
+                <fieldset>
+                    <legend>Survey Info</legend>
+                    <p>
+                        <label> Please Select Your Year </label>
+                        <br/>
+                        <select name="uniYear">
+                            <option value="null">--none--</option>
+                            <option value="first">1st</option>
+                            <option value="second">2nd</option>
+                            <option value="third">3rd</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Which electronic devices do you use?</label>
+                        <br/>
+                        <input type="checkbox" name="computer" value="Computer"><label> Computer </label><br/>
+                        <input type="checkbox" name="ebookReader" value="EBook"><label> Ebook Reader </label><br/>
+                        <input type="checkbox" name="smartPhone" value="SmartPhone"><label> Smart Phone </label><br/>
+                    </p>
+                    <p>
+                        <label>How many hours a day do you spend using electronic devices?</label>
+                        <br/>
+                        <input type="radio" name="Hours" value="1"><label> 1 Hour </label><br/>
+                        <input type="radio" name="Hours" value="2"><label> 2 Hours </label><br/>
+                        <input type="radio" name="Hours" value="3"><label> 3+ Hours </label><br/>
+                    </p>
+                </fieldset>
+                
+                <br/>
+                
+                <fieldset>
+                    <legend>Comments</legend>
+                    <p>
+                        <label>Any other comments</label>
+                        <br/>
+                        <textarea name="comments" cols="30" rows="10"></textarea>
+                    </p>
+                </fieldset>
+                
+                <p><input type="submit" value="Submit"></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
