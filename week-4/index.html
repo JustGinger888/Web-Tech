@@ -8,9 +8,9 @@
 </head>
 <body>
     <div>
-        <div id="formParent" class="container">
+        <div id="formParent1" class="container">
             <form id="studentSurvey" action="http://www.google.com" method="post">
-                <h1>Student Survey</h1>
+                <h1>Tech Survey</h1>
             
                 <fieldset>
                     <legend>Contact Info</legend>
@@ -84,6 +84,118 @@
                 </fieldset>
                 
                 <p><input type="submit" value="Submit"></p>
+            </form>
+        </div>
+
+        <br/>
+
+        <div id="formParent2" class="container">
+            <form action="http://www.google.com" method="post">
+                <h1>Travel Survey</h1>
+            
+                <!-- Personal Information -->   
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="row">
+                        <div class="col-25">
+                            <label> First Name* </label> 
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="firstName" placeholder="Enter First Name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">    
+                            <label> Last Name* </label> 
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="lastName" placeholder="Enter Last Name" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <br/>
+
+                <!-- Contact Information -->   
+                <fieldset>
+                    <legend>Contact Information</legend> 
+                    <div class="row">
+                        <div class="col-25">   
+                            <label> Address* </label> 
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="address_1" placeholder="Enter Address" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25"> 
+                            <label> Postcode* </label>
+                        </div> 
+                        <div class="col-75">
+                            <input type="text" name="post_code" placeholder="Enter Postcode" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">  
+                            <label> Number* </label> 
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" name="number" placeholder="Enter Number" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">    
+                            <label> Email* </label> 
+                        </div>
+                        <div class="col-75">
+                            <input type="email" name="email" placeholder="Enter E-mail" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <br/>
+            
+                <!-- Travel  Information --> 
+                <fieldset>
+                    <legend>Travel  Information</legend>
+                    <label> How do you normally travel to university?</label><br/>
+                    
+                    <input type="radio" name="tasport_method" value="drive"> Drive <br/>
+                    <input type="radio" name="tasport_method" value="public"> Public transport <br/>
+                    <input type="radio" name="tasport_method" value="public"> Walk <br/>
+                    
+                    <br/>
+
+                    <label> How long does it take you to travel in? </label>
+                    <select name="travel_time">
+                        <option value="null">--none--</option>
+                        <option value="10">0 - 10 mins</option>
+                        <option value="20">10 - 20 mins</option>
+                        <option value="30">20 - 30 mins</option>
+                        <option value="30+">30 mins +</option>
+                    </select>
+                </fieldset>
+
+                <br/>
+
+                <!--  Declaration  -->     
+                <fieldset>
+                    <legend>Declaration</legend>
+                    <label> Are you happy for us to email you</label>
+                    <div >
+                        <input type="radio" name="yes" value="yes"> Yes
+                        <input type="radio" name="no" value="no">No
+                    </div>
+                </fieldset>
+
+                <br/>
+
+                <!-- Submit button -->            
+                <input type="submit">    
             </form>
         </div>
     </div>

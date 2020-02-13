@@ -4,7 +4,7 @@ body {
     background-size: cover;
 }
 
-#formParent {
+#formParent1, #formParent2 {
     display: table;
     width: 60%;
     margin: auto;
@@ -117,7 +117,7 @@ fieldset {
         margin-top: 0;
     }
 
-    #formParent {
+    #formParent1, #formParent2 {
         width: 80%;
     }
 }
