@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        // This is a function called "calculateNumber()"
+        function calculateNumber() {
+            //gets data by element id and sets it to veribles
+            var number1 = parseInt(document.getElementById("number1").value);
+            var number2 = parseInt(document.getElementById("number2").value);
+            var number3 = parseInt(document.getElementById("number3").value);
+            // new verible called results whitch addes all the other veribles together
+            var result = number1 + number2 + number3;
+            // outputs result verible to the html id "result"
+            document.getElementById("result").innerHTML = result;
+        } //end function 
+        //this is a comment in JS (for one line only)
+    </script>
+    <!-- JavaScript -->
+
+</head>
+<body>
+    <h1>Exercise 1 & 2</h1>
+    <script>
+        var name;
+        var age;
+        var yourLocation;
+    
+        name = "Ethan";    
+        age = 20;
+        yourLocation = "Bournemouth";
+
+        document.write("<p> Your name:" + name  + "</p>" );
+        document.write("<p> Your age:" + age + "</p>" );
+        document.write("<p> Your location:" + yourLocation  + "</p>" );  
+    </script>
+
+    <h1>Exercise 3</h1>
+    <div>
+        <p> <input type="number" placeholder="enter number 1" id="number1"> </p>
+        <p> <input type="number" placeholder="enter number 2" id="number2"> </p>
+        <p> <input type="number" placeholder="enter number 3" id="number3"> </p>
+        <p> <button onClick="calculateNumber()">Click Me</button> </p>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
